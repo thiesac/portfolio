@@ -1,12 +1,30 @@
 .project-card {
-    width: 50%;
     background-color: #EDC7B7;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
     transform: scale(1.05);
+}
+
+.card-img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #1d1842;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 25px;
+  color: #1d1842;
 }

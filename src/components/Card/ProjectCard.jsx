@@ -10,16 +10,16 @@ function ProjectCard({ project }) {
             rel="noopener noreferrer"
             style={ { textDecoration: 'none' } }
         >
-            <Card className="project-card" id={ `card-${project.name}` }>
+            <Card className="project-card">
                 <Card.Img
-                    // style={{ width: '200px'}}
+                    className="card-img mx-auto"
                     src={ project.image }
                     alt={ project.name }
                 />
-                <Card.Body>
-                    <Card.Title>{ project.name }</Card.Title>
-                    <Card.Text>
-                        Technologies: { project.technologies }
+                <Card.Body className="card-body">
+                    <Card.Title className="card-title">{ project.name }</Card.Title>
+                    <Card.Text className="card-text">
+                        { project.technologies }
                     </Card.Text>
                 </Card.Body>
             </Card>
