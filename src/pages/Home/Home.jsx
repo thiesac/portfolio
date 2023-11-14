@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
+import Banner from '../Banner/Banner';
 
 
 function Home() {
     return (
         <>
             <Header />
-            <AboutMe />
+            <Banner />
             <Projects />
         </>
     )

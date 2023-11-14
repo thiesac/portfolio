@@ -1,43 +1,35 @@
 import React from 'react';
 import projects from './ProjectsList';
-import { Link } from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
 import { Row } from 'react-bootstrap';
+import ProjectCard from '../../components/Card/ProjectCard';
+import Col from 'react-bootstrap/Col';
+
 
 function Projects() {
     return (
         <div
             style={ {
-                backgroundColor: '#1D1842',
+                backgroundColor: '#EDC7B7',
                 padding: '20px',
                 minHeight: '80vh',
             } }
         >
-            <h3
-                style={ { color: '#EDC7B7' }}
-                className="text-center mb-4"
-            >
-                Check out some of my projects
-            </h3>
-            <Row xs={ 1 } md={ 4 } className="g-4" >
+            <Row className="g-4">
+                <h3 style={ { color: '#1D1842' } } className="mb-4 text-center">
+                    Check out some of my projects
+                </h3>
                 { projects.map((project, index) => (
-                    <Link
-                        key={ index } to={ project.link }
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Col
+                        key={ index }
+                        xs={ 12 } // full width on extra-small screens
+                        md={ 6 } // half width on medium screens
+                        lg={ 4 } // one-third width on large screens
                     >
-                        <Card >
-                            <Card.Img />
-                            <Card.Body>
-                                <Card.Title>{ project.name }</Card.Title>
-                                <Card.Text>
-                                    Technologies: { project.technologies }
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Link>
+                        <ProjectCard project={ project } />
+                    </Col>
                 )) }
             </Row>
+
         </div>
     );
 }
