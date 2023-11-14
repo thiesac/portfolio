@@ -9,7 +9,10 @@ function Home() {
         <>
             <Header />
             <Banner />
-            <Projects />
+            <section id="projects">
+                <Projects />
+            </section>
+            {/* <AboutMe /> */}
         </>
     )
 }

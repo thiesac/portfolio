@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #1d1842;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+  cursor: pointer;
+  padding-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.react-scroll-link:hover {
+  color: #ffffff;
+}
+
+.active-link {
+  color: #ffffff;
+}
