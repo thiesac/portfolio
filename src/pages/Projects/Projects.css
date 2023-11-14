@@ -1,5 +1,9 @@
 .projects-container {
-    background-color: #EDC7B7;
+    background-color: #e2dadd;
     padding: 20px;
     min-height: 80vh;
+}
+
+.projects-header {
+    text-transform: uppercase;
 }
