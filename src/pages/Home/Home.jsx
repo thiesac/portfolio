@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import Projects from '../Projects/Projects';
 import Banner from '../Banner/Banner';
+import AboutMe from '../AboutMe/AboutMe';
 
 
 function Home() {
@@ -12,7 +13,9 @@ function Home() {
             <section id="projects">
                 <Projects />
             </section>
-            {/* <AboutMe /> */}
+            <section id="aboutme">
+                <AboutMe />
+            </section>
         </>
     )
 }
