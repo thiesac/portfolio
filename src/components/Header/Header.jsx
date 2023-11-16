@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
+import { Linkedin, Github } from 'react-bootstrap-icons';
 import './Header.css';
 
 function Header() {
@@ -20,18 +21,24 @@ function Header() {
                             smooth={ true }
                             duration={ 500 }
                             activeClass="active-link"
+                            className="custom-link"
                         >
                             About Me
                         </Nav.Link>
-                        <Nav.Link
-                            as={ ScrollLink }
-                            to="contactme"
-                            smooth={ true }
-                            duration={ 500 }
-                            activeClass="active-link"
+                        <Navbar.Brand
+                            href="https://www.linkedin.com/in/thiesa-cesco/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            Contact Me
-                        </Nav.Link>
+                            <Linkedin />
+                        </Navbar.Brand>
+                        <Navbar.Brand
+                            href="https://github.com/thiesac/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Github />
+                        </Navbar.Brand>
                     </Nav>
                 </Container>
             </Navbar>
